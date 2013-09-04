@@ -8,6 +8,11 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController <UICollectionViewDataSource ,UICollectionViewDelegate>
+
+//Outlets 
+@property (weak, nonatomic) IBOutlet UICollectionView *memoryGameBoard;
+@property (weak, nonatomic) IBOutlet UILabel *clickCountLabel;
+@property (weak, nonatomic) IBOutlet UILabel *gameResultLabel;
 
 @end
